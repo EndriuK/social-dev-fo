@@ -2,6 +2,7 @@
 import axios from "axios";
 
 export default {
+	name: "AppRegistration",
 	data() {
 		return {
 			currentField: 0,

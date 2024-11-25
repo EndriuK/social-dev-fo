@@ -1,6 +1,10 @@
 <script>
+
+
 export default {
   name: 'AppHeader',
+  components: {
+  },
   data() {
     return {
       // dati qui
@@ -22,25 +26,27 @@ export default {
         <nav class="hidden md:block">
           <ul class="flex space-x-8">
             <li>
-              <a href="#" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Home</a>
+              <router-link to="/" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Home</router-link>
             </li>
             <li>
-              <a href="#" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Chi Siamo</a>
+              <router-link to="/profile" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Profilo</router-link>
             </li>
             <li>
-              <a href="#" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Servizi</a>
+              <router-link to="/services" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Servizi</router-link>
             </li>
             <li>
-              <a href="#" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Contatti</a>
+              <router-link to="/contacts" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Contatti</router-link>
             </li>
           </ul>
         </nav>
 
         <!-- Pulsante di azione -->
         <div class="flex items-center space-x-2">
-          <button class="bg-transparent text-gray-600 px-4 py-1.5 rounded-md text-sm font-medium hover:text-gray-900 transition-colors">
-            Registrati
-          </button>
+          <router-link to="/registration">
+            <button class="bg-transparent text-gray-600 px-4 py-1.5 rounded-md text-sm font-medium hover:text-gray-900 transition-colors">
+              Registrati
+            </button>
+          </router-link>
           <button class="bg-gray-900 text-white px-4 py-1.5 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors">
             Accedi
           </button>
@@ -48,4 +54,4 @@ export default {
       </div>
     </div>
   </header>
-</template> 
+</template>
