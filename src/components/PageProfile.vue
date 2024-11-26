@@ -5,7 +5,7 @@ export default {
 </script>
 <template lang="">
     <div class="background">
-        <h1>andiamoa  Berlino Mattia!!!!</h1>
+        <h1>Prova</h1>
     </div>
 </template>
 <style lang="">
