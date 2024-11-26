@@ -1,16 +1,15 @@
 <script>
 import Header from "./components/Header.vue";
-import AppRegistration from "./components/AppRegistration.vue";
 
 export default {
-	name: "App",
-	components: {
-		Header,
-		AppRegistration,
-	},
+  name: "App",
+  components: {
+    Header
+  }
 };
 </script>
+
 <template>
-	<Header />
-	<AppRegistration />
+  <Header />
+  <router-view></router-view>
 </template>
